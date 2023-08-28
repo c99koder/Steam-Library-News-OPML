@@ -38,6 +38,6 @@ def fetch_owned_games():
 print('<?xml version="1.0" encoding="utf-8"?><opml version="1.0"><head><title>Steam Feeds</title></head><body><outline text="Steam Library News" title="Steam Library News">')
 
 for game in fetch_owned_games():
-    print(f'<outline text="{html.escape(game["name"])}" title="{html.escape(game["name"])}" type="rss" xmlUrl="https://steamcommunity.com/games/{game["appid"]}/rss/" htmlUrl="https://store.steampowered.com/news/app/{game["appid"]}"/>')
+    print(f'<outline text="{html.escape(game["name"])}" title="{html.escape(game["name"])}" type="rss" xmlUrl="https://store.steampowered.com/feeds/news/app/{game["appid"]}/" htmlUrl="https://store.steampowered.com/news/app/{game["appid"]}"/>')
 
 print('</outline></body></opml>')

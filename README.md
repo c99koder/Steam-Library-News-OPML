@@ -17,7 +17,7 @@ $ python3 --version
 Install required python3 modules:
 
 ```shell
-$ pip3 install pytz requests colorlog
+$ pip3 install requests colorlog
 ```
 
 Run the Python script from the terminal and it will output the OPML file.
